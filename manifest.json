@@ -1,0 +1,582 @@
+{
+  "name": "BrightLocal",
+  "author": "Dougal Crowder",
+  "version": "2.6.9",
+  "api_version": 1,
+  "default_locale": "en-us",
+  "settings": [
+    {
+      "label": "colors_group_label",
+      "variables": [
+        {
+          "identifier": "brand_color",
+          "type": "color",
+          "description": "brand_color_description",
+          "label": "brand_color_label",
+          "value": "rgba(84, 123, 186, 1)"
+        },
+        {
+          "identifier": "brand_text_color",
+          "type": "color",
+          "description": "brand_text_color_description",
+          "label": "brand_text_color_label",
+          "value": "rgba(255, 255, 255, 1)"
+        },
+        {
+          "identifier": "text_color",
+          "type": "color",
+          "description": "text_color_description",
+          "label": "text_color_label",
+          "value": "rgba(14, 21, 28, 1)"
+        },
+        {
+          "identifier": "link_color",
+          "type": "color",
+          "description": "link_color_description",
+          "label": "link_color_label",
+          "value": "rgba(84, 123, 186, 1)"
+        },
+        {
+          "identifier": "background_color",
+          "type": "color",
+          "description": "background_color_description",
+          "label": "background_color_label",
+          "value": "rgba(249, 250, 248, 1)"
+        }
+      ]
+    },
+    {
+      "label": "Calls to Action",
+      "variables": [
+        {
+          "identifier": "feature_request_url",
+          "type": "text",
+          "description": "Paste the url for the Feature Requests form",
+          "label": "Feature Request Url",
+          "value": "https://www.surveymonkey.co.uk/r/3CQV3DN"
+        },
+        {
+          "identifier": "feature_request_button_text",
+          "type": "text",
+          "description": "What it says on the button",
+          "label": "Feature Requests button text",
+          "value": "Request a Feature"
+        },
+        {
+          "identifier": "feature_request_title",
+          "type": "text",
+          "description": "The headline for the feature request banner",
+          "label": "Feature Request Title",
+          "value": "Are we missing something?"
+        },
+        {
+          "identifier": "feature_request_text",
+          "type": "text",
+          "description": "The subtext for the feature request banner",
+          "label": "Feature Requests Text",
+          "value": "Submit a feature request and let us know"
+        }
+      ]
+    },
+    {
+      "label": "categories",
+      "variables": [
+        {
+          "identifier": "cat_01",
+          "type": "file",
+          "description": "Upload an icon to associate with this category",
+          "label": "Category Icon"
+        },
+        {
+          "identifier": "cat_01_id",
+          "type": "text",
+          "description": "Enter the Category ID",
+          "label": "Category ID",
+          "value": "360001518494"
+        },
+        {
+          "identifier": "cat_02",
+          "type": "file",
+          "description": "Upload an icon to associate with this category",
+          "label": "Category Icon"
+        },
+        {
+          "identifier": "cat_02_id",
+          "type": "text",
+          "description": "Enter the Category ID",
+          "label": "Category ID",
+          "value": "200199783"
+        },
+        {
+          "identifier": "cat_03",
+          "type": "file",
+          "description": "Upload an icon to associate with this category",
+          "label": "Category Icon"
+        },
+        {
+          "identifier": "cat_03_id",
+          "type": "text",
+          "description": "Enter the Category ID",
+          "label": "Category ID",
+          "value": "360003090159"
+        },
+        {
+          "identifier": "cat_04",
+          "type": "file",
+          "description": "Upload an icon to associate with this category",
+          "label": "Category Icon"
+        },
+        {
+          "identifier": "cat_04_id",
+          "type": "text",
+          "description": "Enter the Category ID",
+          "label": "Category ID",
+          "value": "360004699994"
+        },
+        {
+          "identifier": "cat_05",
+          "type": "file",
+          "description": "Upload an icon to associate with this category",
+          "label": "Category Icon"
+        },
+        {
+          "identifier": "cat_05_id",
+          "type": "text",
+          "description": "Enter the Category ID",
+          "label": "Category ID",
+          "value": "200199753"
+        },
+        {
+          "identifier": "cat_06",
+          "type": "file",
+          "description": "Upload an icon to associate with this category",
+          "label": "Category Icon"
+        },
+        {
+          "identifier": "cat_06_id",
+          "type": "text",
+          "description": "Enter the Category ID",
+          "label": "Category ID",
+          "value": "200203866"
+        },
+        {
+          "identifier": "cat_07",
+          "type": "file",
+          "description": "Upload an icon to associate with this category",
+          "label": "Category Icon"
+        },
+        {
+          "identifier": "cat_07_id",
+          "type": "text",
+          "description": "Enter the Category ID",
+          "label": "Category ID",
+          "value": "200199763"
+        },
+        {
+          "identifier": "cat_08",
+          "type": "file",
+          "description": "Upload an icon to associate with this category",
+          "label": "Category Icon"
+        },
+        {
+          "identifier": "cat_08_id",
+          "type": "text",
+          "description": "Enter the Category ID",
+          "label": "Category ID",
+          "value": "200203886"
+        },
+        {
+          "identifier": "cat_09",
+          "type": "file",
+          "description": "Upload an icon to associate with this category",
+          "label": "Category Icon"
+        },
+        {
+          "identifier": "cat_09_id",
+          "type": "text",
+          "description": "Enter the Category ID",
+          "label": "Category ID",
+          "value": "360000048188"
+        },
+        {
+          "identifier": "cat_10",
+          "type": "file",
+          "description": "Upload an icon to associate with this category",
+          "label": "Category Icon"
+        },
+        {
+          "identifier": "cat_10_id",
+          "type": "text",
+          "description": "Enter the Category ID",
+          "label": "Category ID",
+          "value": "200199803"
+        },
+        {
+          "identifier": "cat_11",
+          "type": "file",
+          "description": "Upload an icon to associate with this category",
+          "label": "Category Icon"
+        },
+        {
+          "identifier": "cat_11_id",
+          "type": "text",
+          "description": "Enter the Category ID",
+          "label": "Category ID",
+          "value": "360002003674"
+        },
+        {
+          "identifier": "cat_12",
+          "type": "file",
+          "description": "Upload an icon to associate with this category",
+          "label": "Category Icon"
+        },
+        {
+          "identifier": "cat_12_id",
+          "type": "text",
+          "description": "Enter the Category ID",
+          "label": "Category ID",
+          "value": "203415147"
+        },
+        {
+          "identifier": "cat_13",
+          "type": "file",
+          "description": "Upload an icon to associate with this category",
+          "label": "Category Icon"
+        },
+        {
+          "identifier": "cat_13_id",
+          "type": "text",
+          "description": "Enter the Category ID",
+          "label": "Category ID",
+          "value": "200165498"
+        },
+        {
+          "identifier": "cat_14",
+          "type": "file",
+          "description": "Upload an icon to associate with this category",
+          "label": "Category Icon"
+        },
+        {
+          "identifier": "cat_14_id",
+          "type": "text",
+          "description": "Enter the Category ID",
+          "label": "Category ID",
+          "value": "360002292154"
+        },
+        {
+          "identifier": "cat_15",
+          "type": "file",
+          "description": "Upload an icon to associate with this category",
+          "label": "Category Icon"
+        },
+        {
+          "identifier": "cat_15_id",
+          "type": "text",
+          "description": "Enter the Category ID",
+          "label": "Category ID",
+          "value": "360001972814"
+        },
+        {
+          "identifier": "cat_16",
+          "type": "file",
+          "description": "Upload an icon to associate with this category",
+          "label": "Category Icon"
+        },
+        {
+          "identifier": "cat_16_id",
+          "type": "text",
+          "description": "Enter the Category ID",
+          "label": "Category ID",
+          "value": "360002561059"
+        },
+        {
+          "identifier": "cat_17",
+          "type": "file",
+          "description": "Upload an icon to associate with this category",
+          "label": "Category Icon"
+        },
+        {
+          "identifier": "cat_17_id",
+          "type": "text",
+          "description": "Enter the Category ID",
+          "label": "Category ID",
+          "value": "200166617"
+        },
+        {
+          "identifier": "cat_18",
+          "type": "file",
+          "description": "Upload an icon to associate with this category",
+          "label": "Category Icon"
+        },
+        {
+          "identifier": "cat_18_id",
+          "type": "text",
+          "description": "Enter the Category ID",
+          "label": "Category ID",
+          "value": "12135600862226"
+        },
+        {
+          "identifier": "cat_19",
+          "type": "file",
+          "description": "Upload an icon to associate with this category",
+          "label": "Category Icon"
+        },
+        {
+          "identifier": "cat_19_id",
+          "type": "text",
+          "description": "Enter the Category ID",
+          "label": "Category ID",
+          "value": ""
+        },
+        {
+          "identifier": "cat_20",
+          "type": "file",
+          "description": "Upload an icon to associate with this category",
+          "label": "Category Icon"
+        },
+        {
+          "identifier": "cat_20_id",
+          "type": "text",
+          "description": "Enter the Category ID",
+          "label": "Category ID",
+          "value": ""
+        },
+        {
+          "identifier": "cat_21",
+          "type": "file",
+          "description": "Upload an icon to associate with this category",
+          "label": "Category Icon"
+        },
+        {
+          "identifier": "cat_21_id",
+          "type": "text",
+          "description": "Enter the Category ID",
+          "label": "Category ID",
+          "value": ""
+        },
+        {
+          "identifier": "cat_22",
+          "type": "file",
+          "description": "Upload an icon to associate with this category",
+          "label": "Category Icon"
+        },
+        {
+          "identifier": "cat_22_id",
+          "type": "text",
+          "description": "Enter the Category ID",
+          "label": "Category ID",
+          "value": ""
+        },
+        {
+          "identifier": "cat_23",
+          "type": "file",
+          "description": "Upload an icon to associate with this category",
+          "label": "Category Icon"
+        },
+        {
+          "identifier": "cat_23_id",
+          "type": "text",
+          "description": "Enter the Category ID",
+          "label": "Category ID",
+          "value": ""
+        },
+        {
+          "identifier": "cat_24",
+          "type": "file",
+          "description": "Upload an icon to associate with this category",
+          "label": "Category Icon"
+        },
+        {
+          "identifier": "cat_24_id",
+          "type": "text",
+          "description": "Enter the Category ID",
+          "label": "Category ID",
+          "value": ""
+        },
+        {
+          "identifier": "cat_25",
+          "type": "file",
+          "description": "Upload an icon to associate with this category",
+          "label": "Category Icon"
+        },
+        {
+          "identifier": "cat_25_id",
+          "type": "text",
+          "description": "Enter the Category ID",
+          "label": "Category ID",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "label": "brand_group_label",
+      "variables": [
+        {
+          "identifier": "logo",
+          "type": "file",
+          "description": "logo_description",
+          "label": "logo_label"
+        },
+        {
+          "identifier": "favicon",
+          "type": "file",
+          "description": "favicon_description",
+          "label": "favicon_label"
+        }
+      ]
+    },
+    {
+      "label": "images_group_label",
+      "variables": [
+        {
+          "identifier": "homepage_background_image",
+          "type": "file",
+          "description": "homepage_background_image_description",
+          "label": "homepage_background_image_label"
+        }
+      ]
+    },
+    {
+      "label": "search_group_label",
+      "variables": [
+        {
+          "identifier": "instant_search",
+          "type": "checkbox",
+          "description": "instant_search_description",
+          "label": "instant_search_label",
+          "value": true
+        },
+        {
+          "identifier": "scoped_kb_search",
+          "type": "checkbox",
+          "description": "scoped_knowledge_base_search_description",
+          "label": "scoped_knowledge_base_search_label",
+          "value": true
+        },
+        {
+          "identifier": "scoped_community_search",
+          "type": "checkbox",
+          "description": "scoped_community_search_description",
+          "label": "scoped_community_search_label",
+          "value": true
+        }
+      ]
+    },
+    {
+      "label": "home_page_group_label",
+      "variables": [
+        {
+          "identifier": "show_recent_activity",
+          "type": "checkbox",
+          "description": "recent_activity_description",
+          "label": "recent_activity_label",
+          "value": true
+        },
+        {
+          "identifier": "banner_title",
+          "type": "text",
+          "description": "Change the banner title",
+          "label": "Banner Title",
+          "value": "Hi! Need some help?"
+        }
+      ]
+    },
+    {
+      "label": "article_page_group_label",
+      "variables": [
+        {
+          "identifier": "show_articles_in_section",
+          "type": "checkbox",
+          "description": "articles_in_section_description",
+          "label": "articles_in_section_label",
+          "value": true
+        },
+        {
+          "identifier": "show_article_author",
+          "type": "checkbox",
+          "description": "article_author_description",
+          "label": "article_author_label",
+          "value": true
+        },
+        {
+          "identifier": "show_article_comments",
+          "type": "checkbox",
+          "description": "article_comments_description",
+          "label": "article_comments_label",
+          "value": true
+        },
+        {
+          "identifier": "show_follow_article",
+          "type": "checkbox",
+          "description": "follow_article_description",
+          "label": "follow_article_label",
+          "value": true
+        },
+        {
+          "identifier": "show_recently_viewed_articles",
+          "type": "checkbox",
+          "description": "recently_viewed_articles_description",
+          "label": "recently_viewed_articles_label",
+          "value": true
+        },
+        {
+          "identifier": "show_related_articles",
+          "type": "checkbox",
+          "description": "related_articles_description",
+          "label": "related_articles_label",
+          "value": true
+        },
+        {
+          "identifier": "show_article_sharing",
+          "type": "checkbox",
+          "description": "article_sharing_description",
+          "label": "article_sharing_label",
+          "value": true
+        }
+      ]
+    },
+    {
+      "label": "section_page_group_label",
+      "variables": [
+        {
+          "identifier": "show_follow_section",
+          "type": "checkbox",
+          "description": "follow_section_description",
+          "label": "follow_section_label",
+          "value": true
+        }
+      ]
+    },
+    {
+      "label": "community_post_group_label",
+      "variables": [
+        {
+          "identifier": "show_follow_post",
+          "type": "checkbox",
+          "description": "follow_post_description",
+          "label": "follow_post_label",
+          "value": true
+        },
+        {
+          "identifier": "show_post_sharing",
+          "type": "checkbox",
+          "description": "post_sharing_description",
+          "label": "post_sharing_label",
+          "value": true
+        }
+      ]
+    },
+    {
+      "label": "community_topic_group_label",
+      "variables": [
+        {
+          "identifier": "show_follow_topic",
+          "type": "checkbox",
+          "description": "follow_topic_description",
+          "label": "follow_topic_label",
+          "value": true
+        }
+      ]
+    }
+  ]
+}

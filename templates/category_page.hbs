@@ -1,0 +1,68 @@
+<div class="category-container" id="categoryPage">
+    <div class="category-content">
+      <header class="page-header gradient">
+        <div class="container flex">
+          <div class="left flex">
+            <div class="text">
+              <h1><div id="theIcon" class="cat-icon"></div> {{category.name}}</h1>
+              {{#if category.description}}
+                <p class="page-header-description">{{category.description}}</p>
+              {{/if}}
+            </div>
+          </div>
+          <div class="right flex">
+            {{search submit=false}}
+          </div>
+        </div>
+      </header>
+	<div class="container gradient-bg">
+    	<nav class="breadcrumb_nav">
+           {{breadcrumbs}}
+      </nav>
+      <div class="section-tree grid">
+        {{#each sections}}
+          <section class="section">
+            <h3>
+              <a href="{{url}}">{{name}}</a>
+            </h3>
+            {{#if articles}}
+              <ul class="article-list">
+                {{#each articles}}
+                  <li class="article-list-item{{#if promoted}} article-promoted{{/if}}">
+                    {{#if promoted}}
+                      <span data-title="{{t 'promoted'}}" class="icon-star"></span>
+                    {{/if}}
+                    <a href="{{url}}" class="article-list-link">{{title}}</a>
+                    {{#if internal}}
+                      <span class="icon-lock" title="{{t 'internal'}}"></span>
+                    {{/if}}
+                  </li>
+                {{/each}}
+              </ul>
+              {{#if more_articles}}
+                <a href="{{url}}" class="see-all-articles">
+                  {{t 'show_all_articles' count=article_count}}
+                </a>
+              {{/if}}
+            {{/if}}
+          </section>
+        {{else}}
+          <i class="category-empty">
+            <a href="{{category.url}}">{{t 'empty'}}</a>
+          </i>
+        {{/each}}
+      </div>
+      </div>
+    </div>
+  </div>
+<section class="feature-request">
+  <div class="container flex">
+    <div class="text">
+      <h3>{{settings.feature_request_title}}</h3>
+      <p>{{settings.feature_request_text}}</p>
+    </div>
+    <div class="action">
+        <a href="{{settings.feature_request_url}}" class="button green">{{settings.feature_request_button_text}}</a>
+    </div>
+  </div>
+</section>

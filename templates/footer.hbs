@@ -1,0 +1,312 @@
+<!-- <div id="zendeskFooter">
+  
+</div>
+
+<script>
+  /**
+ * Get HTML asynchronously
+ * @param  {String}   url      The URL to get HTML from
+ * @param  {Function} callback A callback funtion. Pass in "response" variable to use returned HTML.
+ */
+var getHTML = function ( url, callback ) {
+
+	// Feature detection
+	if ( !window.XMLHttpRequest ) return;
+
+	// Create new request
+	var xhr = new XMLHttpRequest();
+
+	// Setup callback
+	xhr.onload = function() {
+		if ( callback && typeof( callback ) === 'function' ) {
+			callback( this.responseXML );
+		}
+	}
+
+	// Get the HTML
+	xhr.open( 'GET', url );
+	xhr.responseType = 'document';
+	xhr.send();
+
+};
+
+getHTML( 'https://www.brightlocal.com/', function (response) {
+	var someElem = document.querySelector( '#zendeskFooter' );
+	var someOtherElem = response.querySelector( '#page-footer' );
+	someElem.innerHTML = someOtherElem.innerHTML;
+});
+
+  
+</script>
+ -->
+
+<footer id="page-footer">
+	<div class="footer-cols">
+		<div class="footer-col col-left"><aside
+				id="text-2"
+				class="widget widget_text"
+			><h3 class="widget-title">Products</h3>
+				<div class="textwidget"><ul>
+						<li><a href="https://www.brightlocal.com/platform"><strong
+								>Platform</strong></a></li>
+						<li><a href="https://www.brightlocal.com/local-seo-tools/">Local SEO
+								Tools</a>
+							<ul>
+								<li><a
+										style="position: relative;"
+										href="https://help.brightlocal.com/hc/en-us/articles/360019498459-Local-Search-Grid-Overview"
+									>Local Search Grid
+										<span
+											style="position: absolute; display: block; line-height: 10px; left: 104%; top: 0; color: #fff; padding: 2px 4px; background-color: #a5c559; font-size: 10px; font-weight: 600; border-radius: 3px; background-image: linear-gradient(0deg,#accf60 4%,#a3c559 18%,#93b24f 59%,#93b24f 100%);"
+										>NEW</span></a></li>
+								<li><a
+										href="https://www.brightlocal.com/local-seo-tools/local-search-rank-checker/"
+									>Local Rank Tracker</a></li>
+								<li><a
+										href="https://www.brightlocal.com/local-seo-tools/citation-tracker/"
+									>Citation Tracker</a></li>
+								<li><a
+										href="https://www.brightlocal.com/local-seo-tools/local-search-audit/"
+									>Local Search Audit</a></li>
+								<li><a
+										href="https://www.brightlocal.com/local-seo-tools/google-business-profile-audit/"
+									>Google Business Profile Audit</a></li>
+							</ul>
+						</li>
+						<li><a
+								href="https://www.brightlocal.com/reputation-manager/"
+							>Reputation Manager</a>
+							<ul>
+								<li><a
+										href="https://www.brightlocal.com/reputation-manager/monitor-reviews/"
+									>Monitor Reviews</a></li>
+								<li><a
+										href="https://www.brightlocal.com/reputation-manager/get-reviews/"
+									>Get Reviews</a></li>
+								<li><a
+										href="https://www.brightlocal.com/reputation-manager/showcase-reviews/"
+									>Showcase Reviews</a></li>
+							</ul>
+						</li>
+						<li><a href="https://www.brightlocal.com/citation-builder/">Citation
+								Builder</a>
+							<ul>
+								<li><a
+										href="https://www.brightlocal.com/citation-builder/local-data-aggregators/"
+									>Data Aggregator Submissions</a></li>
+								<li><a
+										href="https://www.brightlocal.com/citation-builder/yext-replacement-service/"
+									>Yext Replacement Service</a></li>
+							</ul>
+						</li>
+						<li><a
+								href="https://www.brightlocal.com/lead-generation-for-marketing-agencies/"
+							>Agency Lead Generator</a></li>
+						<li><a href="https://www.brightlocal.com/pricing/">Plans and Pricing</a></li>
+						<li><a
+								href="https://tools.brightlocal.com/seo-tools/admin/login?email=demo@brightlocal.com&amp;password=demouser&amp;redirect_url=/seo-tools/admin/location-dashboard/location/412837/summary"
+								target="_blank"
+								rel="noopener"
+							>Explore Our Demo Dashboard</a></li>
+					</ul>
+					<ul>
+						<li><strong>Solutions</strong></li>
+						<li><a href="https://www.brightlocal.com/agencies/">Agency</a>
+							<ul>
+								<li><a
+										href="https://www.brightlocal.com/white-label-seo-tools-reports/"
+									>White-Label Tools and Reporting</a></li>
+							</ul>
+						</li>
+						<li><a
+								href="https://www.brightlocal.com/multi-location/"
+							>Multi-location Business</a></li>
+						<li><a href="https://www.brightlocal.com/small-businesses/">Small
+								Business</a></li>
+						<li><a href="https://www.brightlocal.com/enterprise/">BrightLocal
+								for Enterprise</a></li>
+						<li style="padding-bottom: 15px;"><a
+								href="https://www.brightlocal.com/local-seo-apis/"
+							>Local SEO APIs</a></li>
+						<li><a
+								href="https://www.brightlocal.com/free-local-seo-tools/"
+							><strong>Free Tools</strong></a></li>
+						<li><a
+								href="https://www.brightlocal.com/free-local-seo-tools/local-listings-health-scanner/"
+							>Local Listings Health Scanner</a></li>
+						<li><a
+								href="https://www.brightlocal.com/local-search-results-checker/"
+							>Local Search Results Checker</a></li>
+						<li><a
+								href="https://www.brightlocal.com/free-local-seo-tools/local-rankflux/"
+							>Local RankFlux: Local Algorithm Monitoring</a></li>
+						<li><a
+								href="https://www.brightlocal.com/free-local-seo-tools/google-id-and-review-link-generator/"
+							>Google Review Link Generator</a></li>
+					</ul>
+				</div>
+			</aside></div>
+		<div class="footer-col col-center"><aside
+				id="text-3"
+				class="widget widget_text"
+			><h3 class="widget-title">Company</h3>
+				<div class="textwidget"><ul>
+						<li><a href="https://www.brightlocal.com/about-us/">About Us</a></li>
+						<li><a href="https://www.brightlocal.com/our-commitments/">Our
+								Commitments</a></li>
+						<li><a href="https://www.brightlocal.com/about-us/#contact">Contact
+								Us</a></li>
+						<li><a href="https://www.brightlocal.com/case-studies/">Case Studies</a></li>
+						<li><a
+								href="https://www.brightlocal.com/customers/"
+							>Customers</a></li>
+						<li><a href="https://www.brightlocal.com/affiliates/">Affiliate
+								Program</a></li>
+						<li><a
+								href="https://www.brightlocal.com/terms-and-conditions/"
+							>Terms &amp; Conditions</a></li>
+						<li><a href="https://www.brightlocal.com/privacy-policy/">Privacy
+								Policy</a></li>
+						<li><a href="https://www.brightlocal.com/cookies/">Cookie Policy</a></li>
+					</ul>
+				</div>
+			</aside></div>
+		<div class="footer-col col-right"><aside
+				id="text-4"
+				class="widget widget_text"
+			><h3 class="widget-title">Community</h3>
+				<div class="textwidget"><ul>
+						<li><strong>Resources</strong></li>
+						<li><a
+								style="position: relative;"
+								href="https://www.brightlocal.com/agency-directory/"
+							>BrightLocal Agency Directory<span
+									style="position: absolute; display: block; line-height: 10px; left: 104%; top: 0; color: #fff; padding: 2px 4px; background-color: #a5c559; font-size: 10px; font-weight: 600; border-radius: 3px; background-image: linear-gradient(0deg,#accf60 4%,#a3c559 18%,#93b24f 59%,#93b24f 100%);"
+								>NEW</span></a></li>
+						<li><a
+								style="position: relative;"
+								href="https://academy.brightlocal.com/"
+							>BrightLocal Academy
+								<span
+									style="position: absolute; display: block; line-height: 10px; left: 104%; top: 0; color: #fff; padding: 2px 4px; background-color: #a5c559; font-size: 10px; font-weight: 600; border-radius: 3px; background-image: linear-gradient(0deg,#accf60 4%,#a3c559 18%,#93b24f 59%,#93b24f 100%);"
+								>NEW</span></a></li>
+						<li><a href="/book-a-demo/">Book a Demo</a></li>
+						<li><a
+								href="https://www.brightlocal.com/insights/blog/"
+							>Blog</a></li>
+						<li><a
+								href="https://www.brightlocal.com/insights/research/"
+							>Research</a></li>
+						<li><a
+								href="https://www.brightlocal.com/insights/webinars/"
+							>Webinars</a></li>
+						<li><a href="https://www.brightlocal.com/insights/resources/">Free
+								Resources</a></li>
+						<li><a href="https://www.brightlocal.com/insights/resources/">Learn
+								Local Marketing</a></li>
+						<li style="padding-bottom: 15px;"><a
+								href="https://www.brightlocal.com/insights/podcast/"
+							>The BrightLocal Podcast</a></li>
+						<li><strong>Customers</strong></li>
+						<li><a href="https://tools.brightlocal.com/">Login</a></li>
+						<li><a href="https://help.brightlocal.com/hc/en-us">Help Center</a></li>
+						<li><a href="https://status.brightlocal.com/">Service Status</a></li>
+					</ul>
+				</div>
+			</aside></div>
+	</div>
+	<div class="footer-social">
+		<aside id="custom_html-2" class="widget_text widget widget_custom_html"><div
+				class="textwidget custom-html-widget"
+			><ul class="footer-social-icons-list">
+					<li class="social-icons-list-item">
+						<a
+							class="social-icon-link"
+							href="https://twitter.com/brightlocal"
+							target="_blank"
+							rel="noopener"
+						>
+							<span class="screen-reader-text">twitter</span>
+							<i class="icon icon-twitter"></i>
+						</a>
+					</li>
+					<li class="social-icons-list-item">
+						<a
+							class="social-icon-link"
+							href="https://www.facebook.com/brightlocal/"
+							target="_blank"
+							rel="noopener"
+						>
+							<span class="screen-reader-text">facebook</span>
+							<i class="icon icon-facebook"></i>
+						</a>
+					</li>
+					<li class="social-icons-list-item">
+						<a
+							class="social-icon-link"
+							href="https://www.linkedin.com/company/bright-local-seo"
+							target="_blank"
+							rel="noopener"
+						>
+							<span class="screen-reader-text">linkedin</span>
+							<i class="icon icon-linkedin"></i>
+						</a>
+					</li>
+					<li class="social-icons-list-item">
+						<a
+							class="social-icon-link"
+							href="https://www.instagram.com/brightlocal/"
+							target="_blank"
+							rel="noopener"
+						>
+							<span class="screen-reader-text">instagram</span>
+							<i class="icon icon-instagram"></i>
+						</a>
+					</li>
+					<li class="social-icons-list-item">
+						<a
+							class="social-icon-link"
+							href="https://www.youtube.com/user/BrightLocalSEO"
+							target="_blank"
+							rel="noopener"
+						>
+							<span class="screen-reader-text">youtube</span>
+							<i class="icon icon-youtube"></i>
+						</a>
+					</li>
+				</ul></div></aside>
+	</div>
+	<div class="footer-links">
+		<div class="links-center">
+			<a
+				href="https://www.brightlocal.com/"
+				class="custom-logo-link"
+				rel="home"
+				aria-current="page"
+			><img
+					src="https://d317jr06u12xtj.cloudfront.net/2021/07/dDV8Izrs-brightlocal-logo-1.svg"
+					class="custom-logo"
+					alt="BrightLocal"
+				/></a>
+		</div>
+		<div class="links-left">
+		</div>
+		<div class="links-right">
+			<span>© 2021 BrightLocal Ltd</span>
+		</div>
+	</div>
+</footer>
+
+<script type="text/javascript" src="{{asset 'priority-nav.min.js'}}"></script>
+<script>
+	var wrapper = document.querySelector(".nav-wrapperer");
+	 /* var nav = priorityNav.init({
+		mainNavWrapper: ".nav-wrapperer", 
+		mainNav: ".catnav", 
+		navDropdownLabel: 'More',
+		navDropdownClassName: "nav__dropdown", 
+		navDropdownToggleClassName: "nav__dropdown-toggle", 
+		offsetPixels: 50,
+		breakPoint: 200
+	}); */
+</script>

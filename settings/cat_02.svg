@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="72px" height="72px" viewBox="0 0 72 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59 (86127) - https://sketch.com -->
+    <title>cat_02</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="36" cy="36" r="36"></circle>
+    </defs>
+    <g id="Support" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Support-cat-icons" transform="translate(-473.000000, -592.000000)">
+            <g id="Group-10" transform="translate(134.000000, 592.000000)">
+                <g id="cat_02" transform="translate(339.000000, 0.000000)">
+                    <g id="Molecules-/-Cards-/-Feature-Grid-Block">
+                        <g id="Atoms-/-Icons-/-Backgrounds-/-Colours" fill-rule="nonzero">
+                            <use fill="#FFFFFF" xlink:href="#path-1"></use>
+                            <use fill-opacity="0.1" fill="#547BBA" xlink:href="#path-1"></use>
+                        </g>
+                        <g id="Atoms-/-Icons-/-Features-Demos-/-Users" transform="translate(20.000000, 20.000000)">
+                            <path d="M31,22.5833333 L31,23.8611111 C31,24.2160494 30.712963,24.5 30.3541667,24.5 L17.9398148,24.5 C16.3969907,24.0030864 15.787037,23.4351852 15.787037,23.4351852 C15.787037,23.4351852 18.0833333,19.992284 18.0833333,14.9166667 C18.0833333,11.2253086 15.6076389,9.06018519 15.6076389,9.06018519 L15.6076389,9.02469136 C15.5358796,8.45679012 15.5,7.88888889 15.5,7.25 C15.5,4.09104938 18.0833333,1.5 21.3125,1.5 C24.505787,1.5 27.125,4.09104938 27.125,7.25 C27.125,12.5385802 24.5416667,15.4135802 24.5416667,15.4135802 C24.5416667,19.3888889 31,18.1111111 31,22.5833333 Z" id="Path" fill="#7E9DCF" fill-rule="evenodd"></path>
+                            <path d="M19.5,30.0833333 L19.5,31.3611111 C19.5,31.7160494 19.2185185,32 18.8666667,32 L1.13333333,32 C0.781481481,32 0.5,31.7160494 0.5,31.3611111 L0.5,30.0833333 C0.5,25.6466049 6.83333333,26.8888889 6.83333333,22.9135802 C6.83333333,22.9135802 4.3,20.0385802 4.3,14.75 C4.3,11.5910494 6.83333333,9 10,9 C13.1314815,9 15.7,11.5910494 15.7,14.75 C15.7,20.0385802 13.1666667,22.9135802 13.1666667,22.9135802 C13.1666667,26.8888889 19.5,25.6111111 19.5,30.0833333 Z" id="Path" fill="#547BBA" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

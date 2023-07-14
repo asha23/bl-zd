@@ -1,0 +1,97 @@
+<section class="section hero">
+  <div class="hero-inner">
+    <h1>
+      {{settings.banner_title}}
+    </h1>
+    {{search submit=false instant=settings.instant_search class='search search-full'}}
+  </div>
+</section>
+
+<div class="container" id="homepager">
+  <section class="section knowledge-base">
+    <section class="categories blocks">
+      <ul class="blocks-list">
+        {{#each categories}}
+          {{#if ../has_multiple_categories}}
+            <li class="blocks-item category">
+              <a href='{{url}}' class="blocks-item-link">
+             
+                
+             
+              <div class="cat-icon icon-{{ id }}"></div>
+                <h4 class="blocks-item-title">{{name}}</h4>
+              </a>
+              <ul class="sections_list">
+                {{#each sections}}
+              	<li>
+              	<a href="{{url}}">{{name}}</a>
+                </li>
+                {{/each}}
+              </ul>
+            </li>
+          {{else}}
+            {{#each sections}}
+              <li class="blocks-item">
+                <a href='{{url}}' class="blocks-item-link">
+                  <h4 class="blocks-item-title">
+                    {{name}}
+                  </h4>
+                  <p class="blocks-item-description">{{excerpt description}}</p>
+                </a>
+              </li>
+            {{/each}}
+          {{/if}}
+        {{/each}}
+      </ul>
+      {{pagination}}
+    </section>
+
+    {{#if promoted_articles}}
+      <section class="articles">
+        <h3>{{t 'promoted_articles'}}</h3>
+        <ul class="article-list promoted-articles">
+          {{#each promoted_articles}}
+            <li class="promoted-articles-item">
+                <a href="{{url}}">
+                  {{title}}
+
+                  {{#if internal}}
+                    <span class="icon-lock" title="{{t 'internal'}}"></span>
+                  {{/if}}
+                </a>
+            </li>
+          {{/each}}
+        </ul>
+      </section>
+    {{/if}}
+  </section>
+
+<!--   {{#if help_center.community_enabled}}
+    <section class="section home-section community">
+      <h2>{{t 'community'}}</h2>
+      {{#link 'community' class='community-link'}}
+        {{t 'join_conversation'}}
+      {{/link}}
+
+      <div class="community-image"></div>
+    </section>
+  {{/if}} -->
+
+<!--   <section class="section home-section activity">
+    {{#if settings.show_recent_activity}}
+      {{recent_activity}}
+    {{/if}}
+  </section> -->
+  
+</div>
+<section class="feature-request">
+  <div class="container flex">
+    <div class="text">
+      <h3>{{settings.feature_request_title}}</h3>
+      <p>{{settings.feature_request_text}}</p>
+    </div>
+    <div class="action">
+        <a href="{{settings.feature_request_url}}" class="button green">{{settings.feature_request_button_text}}</a>
+    </div>
+  </div>
+</section>

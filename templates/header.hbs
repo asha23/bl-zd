@@ -1,0 +1,161 @@
+<div class="top_notice flex">
+	<a href="https://www.facebook.com/groups/thelocalpack" target="_blank" style="color: white;">
+		<strong>Join the Local Pack</strong>
+	- BrightLocal’s online community, where you can meet, exchange ideas, and ask questions.</a> 
+</div>
+<header class="header" id="header">
+	<div class="logo" id="logo">
+		{{#link "help_center"}}
+			<img
+				src="{{settings.logo}}"
+				alt="{{t 'home_page' name=help_center.name}}"
+			/>
+		{{/link}}
+		<nav class="dropper" role="menu" id="drops">
+			<a href="https://www.brightlocal.com" role="menuitem">BrightLocal Home</a>
+			<a
+				href="https://help.brightlocal.com//hc/en-us"
+				role="menuitem"
+			>BrightLocal Help Center Home</a>
+		</nav>
+	</div>
+
+	 {{#if article.internal}}
+		<div class="search-container">
+			<nav class="article_search">
+				{{search scoped=settings.scoped_kb_search submit=false}}
+			</nav>
+		</div>
+  	{{/if}}
+	
+	<div class="nav-wrapper">
+
+		<span
+			class="icon-menu"
+			tabindex="0"
+			role="button"
+			aria-controls="user-nav"
+			aria-expanded="false"
+			aria-label="{{t 'toggle_navigation'}}"
+		></span>
+
+		<nav class="user-nav" id="user-nav">
+			<a
+				href="https://www.brightlocal.com/free-online-demo/"
+				target="_blank"
+			>Book a Demo</a>
+			<a
+				href="https://www.brightlocal.com/about-us/#contact"
+				target="_blank"
+			>Contact us</a>
+			{{#if signed_in}}
+				{{link "new_request" class="submit-a-request"}}
+			{{/if}}
+		</nav>
+		{{user_info}}
+	</div>
+	<!-- <div class="catNav_wrap" style="display:none;">
+		<nav class="category-nav" id="category-nav">
+			<div class="nav-wrapperer">
+				 <ul class="catnav" id="catNav">
+					<li class="cat_link">
+						<a
+							data-id="360001518494"
+							href="/hc/en-us/categories/360001518494-Getting-Started-with-BrightLocal"
+						>Getting Started</a>
+					</li>
+					<li class="cat_link">
+						<a
+							data-id="200199783"
+							href="https://help.brightlocal.com/hc/en-us/categories/200199783-Your-Account-"
+						>Account</a>
+					</li>
+					<li class="cat_link">
+						<a
+							data-id="360002292154"
+							href="https://help.brightlocal.com/hc/en-us/categories/360002292154-Reports-and-White-Labeling-"
+						>Reports</a>
+					</li>
+					<li class="cat_link">
+						<a
+							data-id="360001972814"
+							href="https://help.brightlocal.com/hc/en-us/categories/360001972814-Location-Information-"
+						>Location Info</a>
+					</li>
+					<li class="cat_link">
+						<a 
+							data-id="12135600862226"
+							href="https://help.brightlocal.com/hc/en-us/categories/12135600862226-GBP-Post-Scheduler-"
+						>GBP Post Scheduler</a>
+					</li>
+					<li class="cat_link">
+						<a
+							data-id="200199753"
+							href="https://help.brightlocal.com/hc/en-us/categories/200199753-Citation-Builder"
+						>Citation Builder</a>
+					</li>
+					<li class="cat_link">
+						<a
+							data-id="200166617"
+							href="https://help.brightlocal.com/hc/en-us/categories/200166617-Local-Search-Rank-Checker"
+						>Local Rank Tracker</a>
+					</li>
+					<li class="cat_link">
+						<a
+							data-id="200203876"
+							href="https://help.brightlocal.com/hc/en-us/categories/200203876-Citation-Tracker"
+						>Citation Tracker</a>
+					</li>
+					<li class="cat_link">
+						<a
+							data-id="200203866"
+							href="https://help.brightlocal.com/hc/en-us/categories/200203866-Reputation-Manager"
+						>Reputation Manager</a>
+					</li>
+					<li class="cat_link">
+						<a
+							data-id="200199763"
+							href="https://help.brightlocal.com/hc/en-us/categories/200199763-Google-My-Business-Audit-"
+						>GBP Audit</a>
+					</li>
+					<li class="cat_link">
+						<a
+							data-id="360000048188"
+							href="https://help.brightlocal.com/hc/en-us/categories/360000048188-Agency-Lead-Generator-"
+						>Agency Lead Generator</a>
+					</li>
+					<li class="cat_link">
+						<a
+							data-id="200203886"
+							href="https://help.brightlocal.com/hc/en-us/categories/200203886-Local-Search-Audit"
+						>Local Search Audit</a>
+					</li>
+					<li class="cat_link">
+						<a
+							data-id="360002651860"
+							href="https://help.brightlocal.com/hc/en-us/categories/360002651860-Local-Search-Grid"
+						>Local Search Grid</a>
+					</li>
+					<li class="cat_link">
+						<a
+							data-id="360002972560"
+							href="https://help.brightlocal.com/hc/en-us/categories/360002972560-Agency-Directory"
+						>Agency Directory</a>
+					</li>
+					<li class="cat_link">
+						<a
+							data-id="360002003674"
+							href="https://help.brightlocal.com/hc/en-us/categories/360002003674-Multi-Location-and-Enterprise-"
+						>Multi Location</a>
+					</li>
+					<li class="cat_link">
+						<a
+							data-id="200199803"
+							href="/hc/en-us/categories/200199803-Local-SEO-APIs"
+						>APIs</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</div -->
+</header>

@@ -1,0 +1,78 @@
+<div class="category-container">
+    <div class="category-content">
+      <header class="page-header gradient">
+        <div class="container flex">
+          <div class="left flex">
+            <div class="text">
+        			<h1><div id="theIcon" class="cat-icon"></div> {{section.name}}</h1>
+              {{#if settings.show_follow_section}}
+                {{subscribe}}
+              {{/if}}
+        {{#if section.description}}
+          <p class="page-header-description">{{section.description}}</p>
+        {{/if}}
+        </div>
+          </div>
+          <div class="right flex">
+            {{search submit=false}}
+          </div>
+        </div>
+      </header>
+			<div class="container skinny">
+        <nav class="breadcrumb_nav">
+           {{breadcrumbs}}
+        </nav>
+        <div class="skinny">
+      {{#if section.sections}}
+        <ul class="section-list section-list--collapsed">
+          {{#each section.sections}}
+          <li class="section-list-item">
+              <a href="{{url}}">
+                <span>{{name}}</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" viewBox="0 0 16 16" aria-hidden="true">
+                  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 14.5l6.1-6.1c.2-.2.2-.5 0-.7L5 1.5"/>
+                </svg>
+              </a>
+            </li>
+          {{/each}}
+          <a tabindex="0" class="see-all-sections-trigger" aria-hidden="true" id="see-all-sections-trigger" title="{{t 'see_all_sections'}}">{{t 'see_all_sections'}}</a>
+        </ul>
+      {{/if}}
+
+
+      {{#if section.articles}}
+        <ul class="article-list">
+          {{#each section.articles}}
+            <li class="article-list-item {{#if promoted}} article-promoted{{/if}}">
+              {{#if promoted}}
+                <span data-title="{{t 'promoted'}}" class="icon-star"></span>
+              {{/if}}
+              <a href="{{url}}" class="article-list-link">{{title}}</a>
+              {{#if internal}}
+                <span class="icon-lock" title="{{t 'internal'}}"></span>
+              {{/if}}
+            </li>
+          {{/each}}
+        </ul>
+      {{else}}
+        <i class="section-empty">
+          <a href="{{section.url}}">{{t 'empty'}}</a>
+        </i>
+      {{/if}}
+
+      {{pagination}}
+      </div>
+      </div>
+  </div>
+
+<section class="feature-request">
+  <div class="container flex">
+    <div class="text">
+      <h3>{{settings.feature_request_title}}</h3>
+      <p>{{settings.feature_request_text}}</p>
+    </div>
+    <div class="action">
+        <a href="{{settings.feature_request_url}}" class="button green">{{settings.feature_request_button_text}}</a>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="72px" height="72px" viewBox="0 0 72 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59 (86127) - https://sketch.com -->
+    <title>cat_07</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="36" cy="36" r="36"></circle>
+        <linearGradient x1="50.2851621%" y1="0.593840318%" x2="97.2122214%" y2="98.3178288%" id="linearGradient-2">
+            <stop stop-color="#9FCDDD" offset="0%"></stop>
+            <stop stop-color="#6CADC4" offset="47.6314126%"></stop>
+            <stop stop-color="#4A93AE" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Support" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Support-cat-icons" transform="translate(-812.000000, -944.000000)">
+            <g id="Group-10" transform="translate(134.000000, 592.000000)">
+                <g id="cat_07" transform="translate(678.000000, 352.000000)">
+                    <g id="Atoms-/-Icons-/-Backgrounds-/-Colours" fill-rule="nonzero">
+                        <use fill="#FFFFFF" xlink:href="#path-1"></use>
+                        <use fill-opacity="0.0972882699" fill="#549FBA" xlink:href="#path-1"></use>
+                    </g>
+                    <g id="Atoms-/-Icons-/-support-/-ct" transform="translate(20.000000, 20.000000)" fill="url(#linearGradient-2)">
+                        <g id="Atoms-/-Icons-/-24-/-Blue-/-G" transform="translate(-0.182539, 0.000000)">
+                            <path d="M16,13.7142857 L16,19.2 L25.0742857,19.2 C24.7085714,21.5542857 22.3314286,26.1028571 16,26.1028571 C10.5371429,26.1028571 6.08,21.5771429 6.08,16 C6.08,10.4228571 10.5371429,5.89714286 16,5.89714286 C19.1085714,5.89714286 21.1885714,7.22285714 22.3771429,8.36571429 L26.72,4.18285714 C23.9314286,1.57714286 20.32,0 16,0 C7.15428571,0 0,7.15428571 0,16 C0,24.8457143 7.15428571,32 16,32 C25.2342857,32 31.36,25.5085714 31.36,16.3657143 C31.36,15.3142857 31.2457143,14.5142857 31.1085714,13.7142857 L16,13.7142857 L16,13.7142857 Z"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
