@@ -1,13 +1,19 @@
- <noscript>
-	<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WC7KC5" height="0" width="0"
-		style="display:none;visibility:hidden"></iframe>
-</noscript>
+<!-- version 3 -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var currentPageURL = window.location.href;
 
-<div class="top_notice flex">
-	<a href="https://www.facebook.com/groups/thelocalpack" target="_blank" style="color: white;">
-		<strong>Join the Local Pack</strong>
-	- BrightLocal’s online community, where you can meet, exchange ideas, and ask questions.</a> 
-</div>
+    if (currentPageURL.includes('/articles/')) {
+      document.querySelector('.search-container').style.display = 'block';
+    } else {
+      document.querySelector('.search-container').style.display = 'none';
+    }
+  });
+</script>
+
+<!-- div class="top_notice flex">
+	Just a heads up: we're updating the Help Center to match our new branding! If you spot any inconsistencies, don't worry, we're working on it!.
+</div -->
 <header class="header" id="header">
 	<div class="logo" id="logo">
 		{{#link "help_center"}}
@@ -24,15 +30,14 @@
 			>BrightLocal Help Center Home</a>
 		</nav>
 	</div>
-	{{!-- {{#if article}}
-		{{#if article.internal}}
-			<div class="search-container">
-				<nav class="article_search">
-					{{search scoped=settings.scoped_kb_search submit=false}}
-				</nav>
-			</div>
-		{{/if}}
-	{{/if}} --}}
+
+	<!-- do a conditional here -->
+	
+	<div class="search-container">
+		<nav class="article_search">
+			{{search scoped=settings.scoped_kb_search submit=false}}
+		</nav>
+	</div>
 	
 	<div class="nav-wrapper">
 

@@ -1,3 +1,45 @@
+<!-- <div id="zendeskFooter">
+  
+</div>
+
+<script>
+  /**
+ * Get HTML asynchronously
+ * @param  {String}   url      The URL to get HTML from
+ * @param  {Function} callback A callback funtion. Pass in "response" variable to use returned HTML.
+ */
+var getHTML = function ( url, callback ) {
+
+	// Feature detection
+	if ( !window.XMLHttpRequest ) return;
+
+	// Create new request
+	var xhr = new XMLHttpRequest();
+
+	// Setup callback
+	xhr.onload = function() {
+		if ( callback && typeof( callback ) === 'function' ) {
+			callback( this.responseXML );
+		}
+	}
+
+	// Get the HTML
+	xhr.open( 'GET', url );
+	xhr.responseType = 'document';
+	xhr.send();
+
+};
+
+getHTML( 'https://www.brightlocal.com/', function (response) {
+	var someElem = document.querySelector( '#zendeskFooter' );
+	var someOtherElem = response.querySelector( '#page-footer' );
+	someElem.innerHTML = someOtherElem.innerHTML;
+});
+
+  
+</script>
+ -->
+
 <footer id="page-footer">
 	<div class="footer-cols">
 		<div class="footer-col col-left"><aside
@@ -137,12 +179,6 @@
 						<li><strong>Resources</strong></li>
 						<li><a
 								style="position: relative;"
-								href="https://www.brightlocal.com/agency-directory/"
-							>BrightLocal Agency Directory<span
-									style="position: absolute; display: block; line-height: 10px; left: 104%; top: 0; color: #fff; padding: 2px 4px; background-color: #a5c559; font-size: 10px; font-weight: 600; border-radius: 3px; background-image: linear-gradient(0deg,#accf60 4%,#a3c559 18%,#93b24f 59%,#93b24f 100%);"
-								>NEW</span></a></li>
-						<li><a
-								style="position: relative;"
 								href="https://academy.brightlocal.com/"
 							>BrightLocal Academy
 								<span
@@ -250,7 +286,7 @@
 		<div class="links-left">
 		</div>
 		<div class="links-right">
-			<span>© 2024 BrightLocal Ltd</span>
+			<span>© 2021 BrightLocal Ltd</span>
 		</div>
 	</div>
 </footer>
@@ -258,4 +294,13 @@
 <script type="text/javascript" src="{{asset 'priority-nav.min.js'}}"></script>
 <script>
 	var wrapper = document.querySelector(".nav-wrapperer");
+	 /* var nav = priorityNav.init({
+		mainNavWrapper: ".nav-wrapperer", 
+		mainNav: ".catnav", 
+		navDropdownLabel: 'More',
+		navDropdownClassName: "nav__dropdown", 
+		navDropdownToggleClassName: "nav__dropdown-toggle", 
+		offsetPixels: 50,
+		breakPoint: 200
+	}); */
 </script>
