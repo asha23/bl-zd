@@ -1,10 +1,41 @@
 {
   "name": "BrightLocal - CookieBot Theme",
   "author": "Ash Whiting",
-  "version": "3.3.8",
+  "version": "3.3.9",
   "api_version": 1,
   "default_locale": "en-us",
   "settings": [
+    {
+      "label": "Branding",
+      "variables": [
+        {
+          "identifier": "logo",
+          "type": "file",
+          "description": "Upload your brand logo here.",
+          "label": "Logo",
+          "default": "assets/logo.svg"
+        }
+      ]
+    },
+    {
+      "label": "Typography",
+      "variables": [
+        {
+          "identifier": "body_font",
+          "type": "text",
+          "description": "Font family for the body text.",
+          "label": "Body Font",
+          "value": "'Poppins', sans-serif"
+        },
+        {
+          "identifier": "heading_font",
+          "type": "text",
+          "description": "Font family for headings.",
+          "label": "Heading Font",
+          "value": "'Poppins', sans-serif"
+        }
+      ]
+    },
     {
       "label": "colors_group_label",
       "variables": [
