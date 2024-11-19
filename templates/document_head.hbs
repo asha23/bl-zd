@@ -1,44 +1,132 @@
+<!-- Cookiebot Script -->
+<script
+    id="Cookiebot"
+    src="https://consent.cookiebot.com/uc.js"
+    data-cbid="6ac94a6e-2f94-4f3a-98d7-0034ad4d0a38"
+    data-blockingmode="auto"
+    data-layer-name="dataLayer"
+    type="text/javascript"
+    data-georegions="
+        {'region':'US-06','cbid':'ea72e80e-4330-4a75-bdee-be41afb6915d'},
+        {'region':'US-09','cbid':'ea72e80e-4330-4a75-bdee-be41afb6915d'},
+        {'region':'US-08','cbid':'ea72e80e-4330-4a75-bdee-be41afb6915d'},
+        {'region':'US-49','cbid':'ea72e80e-4330-4a75-bdee-be41afb6915d'},
+        {'region':'US-51','cbid':'ea72e80e-4330-4a75-bdee-be41afb6915d'},
+        {'region':'BR','cbid':'e9175ff6-86b6-4866-b95c-f7d8a577a452'},
+        {'region':'ZA','cbid':'a698b892-d6e2-4be2-a00e-cf2cd78d0fb6'},
+        {'region':'AT','cbid':'bd50f22f-cec7-4ef5-be66-884a348da311'},
+        {'region':'BE','cbid':'bd50f22f-cec7-4ef5-be66-884a348da311'},
+        {'region':'BG','cbid':'bd50f22f-cec7-4ef5-be66-884a348da311'},
+        {'region':'HR','cbid':'bd50f22f-cec7-4ef5-be66-884a348da311'},
+        {'region':'CY','cbid':'bd50f22f-cec7-4ef5-be66-884a348da311'},
+        {'region':'CZ','cbid':'bd50f22f-cec7-4ef5-be66-884a348da311'},
+        {'region':'DK','cbid':'bd50f22f-cec7-4ef5-be66-884a348da311'},
+        {'region':'EE','cbid':'bd50f22f-cec7-4ef5-be66-884a348da311'},
+        {'region':'FI','cbid':'bd50f22f-cec7-4ef5-be66-884a348da311'},
+        {'region':'FR','cbid':'bd50f22f-cec7-4ef5-be66-884a348da311'},
+        {'region':'DE','cbid':'bd50f22f-cec7-4ef5-be66-884a348da311'},
+        {'region':'GR','cbid':'bd50f22f-cec7-4ef5-be66-884a348da311'},
+        {'region':'HU','cbid':'bd50f22f-cec7-4ef5-be66-884a348da311'},
+        {'region':'IE','cbid':'bd50f22f-cec7-4ef5-be66-884a348da311'},
+        {'region':'IT','cbid':'bd50f22f-cec7-4ef5-be66-884a348da311'},
+        {'region':'LV','cbid':'bd50f22f-cec7-4ef5-be66-884a348da311'},
+        {'region':'LT','cbid':'bd50f22f-cec7-4ef5-be66-884a348da311'},
+        {'region':'LU','cbid':'bd50f22f-cec7-4ef5-be66-884a348da311'},
+        {'region':'MT','cbid':'bd50f22f-cec7-4ef5-be66-884a348da311'},
+        {'region':'NL','cbid':'bd50f22f-cec7-4ef5-be66-884a348da311'},
+        {'region':'PL','cbid':'bd50f22f-cec7-4ef5-be66-884a348da311'},
+        {'region':'PT','cbid':'bd50f22f-cec7-4ef5-be66-884a348da311'},
+        {'region':'RO','cbid':'bd50f22f-cec7-4ef5-be66-884a348da311'},
+        {'region':'SK','cbid':'bd50f22f-cec7-4ef5-be66-884a348da311'},
+        {'region':'SI','cbid':'bd50f22f-cec7-4ef5-be66-884a348da311'},
+        {'region':'ES','cbid':'bd50f22f-cec7-4ef5-be66-884a348da311'},
+        {'region':'SE','cbid':'bd50f22f-cec7-4ef5-be66-884a348da311'},
+        {'region':'IS','cbid':'bd50f22f-cec7-4ef5-be66-884a348da311'},
+        {'region':'LI','cbid':'bd50f22f-cec7-4ef5-be66-884a348da311'},
+        {'region':'NO','cbid':'bd50f22f-cec7-4ef5-be66-884a348da311'},
+        {'region':'GB','cbid':'bd50f22f-cec7-4ef5-be66-884a348da311'},
+        {'region':'AU','cbid':'f9d560e1-7cd1-4571-bc0f-973120ac9408'},
+        {'region':'NZ','cbid':'f9d560e1-7cd1-4571-bc0f-973120ac9408'}
+    "> 
+</script>       
 
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag() {
-    dataLayer.push(arguments);
-}
+<!-- Tag Manager Script -->
+<script data-cookieconsent="ignore">
+    window.dataLayer = window.dataLayer || [];
+    
+    function gtag() {
+        dataLayer.push(arguments);
+    }
 
-gtag('consent', 'default', {
-    'analytics_storage': 'granted',
-    'ad_storage': 'denied',
-    'ad_user_data': 'denied',
-    'ad_personalization': 'denied',
-    'region': ["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR",
-        "DE", "GR", "HU", "IS", "IE", "IT", "LV", "LI", "LT", "LU",
-        "MT", "NL", "NO", "PL", "PT", "RO", "SK", "SI", "ES", "SE",
-        "UK", "CH"
-    ]
-});
+    // Define default and granted consent objects
+    const defaultConsent = {
+        ad_personalization: "denied",
+        ad_storage: "denied",
+        ad_user_data: "denied",
+        analytics_storage: "denied",
+        functionality_storage: "denied",
+        personalization_storage: "denied",
+        security_storage: "granted",
+        wait_for_update: 500,
+    };
 
-// Step 3: This snippet sends consent updates from the HubSpot cookie banner to Google's tags using Consent Mode v2
-var _hsp = window._hsp = window._hsp || []; 
-_hsp.push(['addPrivacyConsentListener', function(consent) {
-    var hasAnalyticsConsent = consent && (consent.allowed || (consent.categories && consent.categories.analytics));
-    var hasAdsConsent = consent && (consent.allowed || (consent.categories && consent.categories.advertisement));
+    const grantedConsent = {
+        ad_personalization: "granted",
+        ad_storage: "granted",
+        ad_user_data: "granted",
+        analytics_storage: "granted",
+        functionality_storage: "granted",
+        personalization_storage: "granted",
+        security_storage: "granted",
+        wait_for_update: 500,
+    };
 
-    gtag('consent', 'update', {
-        'ad_storage': hasAdsConsent ? 'granted' : 'denied',
-        'analytics_storage': 'granted',
-        'ad_user_data': hasAdsConsent ? 'granted' : 'denied',
-        'ad_personalization': hasAdsConsent ? 'granted' : 'denied'
+    // Apply default consent on page load
+    gtag("consent", "default", defaultConsent);
+
+    // Function to adjust consent based on geo-IP
+    function gtm_permissions() {
+        // Check if Cookiebot is loaded and userCountry is available
+        if (typeof Cookiebot !== "undefined" && Cookiebot.userCountry) {
+
+            const restrictedCountries = /AT|BE|BG|CY|CZ|DE|DK|EE|ES|FI|FR|GB|GR|HR|HU|IE|IT|LT|LU|LV|MT|NL|PL|PT|RO|SE|SI|SK|AU|NZ|BR|ZA/;
+            const userCountry = Cookiebot.userCountry.toUpperCase();
+
+            if (!restrictedCountries.test(userCountry)) {
+                // Grant full consent for non-restricted countries
+                gtag("consent", "default", grantedConsent);
+            } else {
+                // Apply restricted consent settings for restricted countries
+                gtag("consent", "default", defaultConsent);
+                gtag("set", "ads_data_redaction", true);
+                gtag("set", "url_passthrough", false);
+            }
+        } else {
+            setTimeout(gtm_permissions, 100);
+        }
+    }
+
+    // Initial geo-IP check on page load
+    gtm_permissions();
+
+    // Load GTM immediately, independent of consent
+    (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        const f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l !== 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WC7KC5');
+
+    // Wait for the Cookiebot dialog to display, then apply geo-IP consent changes
+    window.addEventListener('CookiebotOnDialogDisplay', function () {
+        gtm_permissions();
     });
-}]);
+ 
 </script>
-
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-WC7KC5');</script>
-<!-- End Google Tag Manager -->
 
 <!-- Start of HubSpot Embed Code -->
 <script type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/144008104.js"></script>

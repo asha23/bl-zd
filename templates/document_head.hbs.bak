@@ -1,0 +1,58 @@
+
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag() {
+    dataLayer.push(arguments);
+}
+
+gtag('consent', 'default', {
+    'analytics_storage': 'granted',
+    'ad_storage': 'denied',
+    'ad_user_data': 'denied',
+    'ad_personalization': 'denied',
+    'region': ["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR",
+        "DE", "GR", "HU", "IS", "IE", "IT", "LV", "LI", "LT", "LU",
+        "MT", "NL", "NO", "PL", "PT", "RO", "SK", "SI", "ES", "SE",
+        "UK", "CH"
+    ]
+});
+
+// Step 3: This snippet sends consent updates from the HubSpot cookie banner to Google's tags using Consent Mode v2
+var _hsp = window._hsp = window._hsp || []; 
+_hsp.push(['addPrivacyConsentListener', function(consent) {
+    var hasAnalyticsConsent = consent && (consent.allowed || (consent.categories && consent.categories.analytics));
+    var hasAdsConsent = consent && (consent.allowed || (consent.categories && consent.categories.advertisement));
+
+    gtag('consent', 'update', {
+        'ad_storage': hasAdsConsent ? 'granted' : 'denied',
+        'analytics_storage': 'granted',
+        'ad_user_data': hasAdsConsent ? 'granted' : 'denied',
+        'ad_personalization': hasAdsConsent ? 'granted' : 'denied'
+    });
+}]);
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WC7KC5');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/144008104.js"></script>
+<!-- End of HubSpot Embed Code -->
+
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link
+	href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+	rel="stylesheet">
+<link href="https://www.brightlocal.com/wp-content/themes/brightlocal/assets/css/footer.css" rel="stylesheet">
+
+<script>
+  window.addEventListener('load', function() { window.zE('messenger:set', 'conversationFields', [{ id: '22729035946514', value: window.location.href }]); });
+</script>
