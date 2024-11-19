@@ -68,8 +68,7 @@ div#CybotCookiebotDialogFooter div#CybotCookiebotDialogBodyButtons div#CybotCook
 	background-color:#0FD03B;
 }
 
-#CybotCookiebotDialog input:checked+.CybotCookiebotDialogBodyLevelButtonSlider,
-.CybotCookiebotDialogBodyLevelButtonSlider {
+#CybotCookiebotDialog input:checked+.CybotCookiebotDialogBodyLevelButtonSlider {
     background-color:#0FD03B!important;
 }
 
@@ -132,6 +131,10 @@ div#CybotCookiebotDialogFooter div#CybotCookiebotDialogBodyButtons div#CybotCook
     div#CybotCookiebotDialogFooter div#CybotCookiebotDialogBodyButtons div#CybotCookiebotDialogBodyButtonsWrapper .CybotCookiebotDialogBodyButton {
         display: block;
     }
+}
+
+#CookiebotWidget {
+    display: none !important;
 }
 
 
