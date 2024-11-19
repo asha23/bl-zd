@@ -95,16 +95,18 @@ div#CybotCookiebotDialogFooter div#CybotCookiebotDialogBodyButtons div#CybotCook
     margin-left: 0 !important;
     box-shadow: none;
     transform: none;
+	background-color:#0FD03B;
 }
 
 div#CybotCookiebotDialogFooter div#CybotCookiebotDialogBodyButtons div#CybotCookiebotDialogBodyButtonsWrapper #CybotCookiebotDialogBodyButtonDecline:hover,
 div#CybotCookiebotDialogFooter div#CybotCookiebotDialogBodyButtons div#CybotCookiebotDialogBodyButtonsWrapper #CybotCookiebotDialogBodyButtonDecline:focus {
     transform: none;
     border: 2px solid #252525 !important;
+	background-color:#0FD03B;
 }
 
 div#CybotCookiebotDialogFooter div#CybotCookiebotDialogBodyButtons div#CybotCookiebotDialogBodyButtonsWrapper #CybotCookiebotDialogBodyButtonAccept {
-    background: #0FD03B !important;
+    background-color: #0FD03B !important;
     font-size: 16px !important;
     padding: 1rem !important;
     width: 144px !important;
@@ -117,6 +119,7 @@ div#CybotCookiebotDialogFooter div#CybotCookiebotDialogBodyButtons div#CybotCook
 div#CybotCookiebotDialogFooter div#CybotCookiebotDialogBodyButtons div#CybotCookiebotDialogBodyButtonsWrapper #CybotCookiebotDialogBodyButtonAccept:focus {
     transform: none;
     border: 2px solid #252525 !important;
+	background-color:#0FD03B;
 }
 
 /* Responsive adjustments */
