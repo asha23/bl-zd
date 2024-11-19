@@ -939,6 +939,7 @@ main {
 	-ms-flex: 0 0 auto;
 	flex: 0 0 auto; */
 	display:flex;
+	align-items: center;
 }
 .logo {
 	/* -webkit-box-flex: 0;
@@ -1048,6 +1049,8 @@ main {
 .nav-wrapper a.login {
 	display: inline-block;
 	padding-top: 2px;
+	padding-top:8px;
+	padding-bottom:8px;
 }
 
 .nav-wrapper .icon-menu {
