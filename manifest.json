@@ -1,7 +1,7 @@
 {
   "name": "BrightLocal",
   "author": "Dougal Crowder",
-  "version": "2.6.9",
+  "version": "2.7.0",
   "api_version": 1,
   "default_locale": "en-us",
   "settings": [

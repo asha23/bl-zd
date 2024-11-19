@@ -1,45 +1,3 @@
-<!-- <div id="zendeskFooter">
-  
-</div>
-
-<script>
-  /**
- * Get HTML asynchronously
- * @param  {String}   url      The URL to get HTML from
- * @param  {Function} callback A callback funtion. Pass in "response" variable to use returned HTML.
- */
-var getHTML = function ( url, callback ) {
-
-	// Feature detection
-	if ( !window.XMLHttpRequest ) return;
-
-	// Create new request
-	var xhr = new XMLHttpRequest();
-
-	// Setup callback
-	xhr.onload = function() {
-		if ( callback && typeof( callback ) === 'function' ) {
-			callback( this.responseXML );
-		}
-	}
-
-	// Get the HTML
-	xhr.open( 'GET', url );
-	xhr.responseType = 'document';
-	xhr.send();
-
-};
-
-getHTML( 'https://www.brightlocal.com/', function (response) {
-	var someElem = document.querySelector( '#zendeskFooter' );
-	var someOtherElem = response.querySelector( '#page-footer' );
-	someElem.innerHTML = someOtherElem.innerHTML;
-});
-
-  
-</script>
- -->
-
 <footer id="page-footer">
 	<div class="footer-cols">
 		<div class="footer-col col-left"><aside
@@ -292,7 +250,7 @@ getHTML( 'https://www.brightlocal.com/', function (response) {
 		<div class="links-left">
 		</div>
 		<div class="links-right">
-			<span>© 2021 BrightLocal Ltd</span>
+			<span>© 2024 BrightLocal Ltd</span>
 		</div>
 	</div>
 </footer>
@@ -300,13 +258,4 @@ getHTML( 'https://www.brightlocal.com/', function (response) {
 <script type="text/javascript" src="{{asset 'priority-nav.min.js'}}"></script>
 <script>
 	var wrapper = document.querySelector(".nav-wrapperer");
-	 /* var nav = priorityNav.init({
-		mainNavWrapper: ".nav-wrapperer", 
-		mainNav: ".catnav", 
-		navDropdownLabel: 'More',
-		navDropdownClassName: "nav__dropdown", 
-		navDropdownToggleClassName: "nav__dropdown-toggle", 
-		offsetPixels: 50,
-		breakPoint: 200
-	}); */
 </script>
