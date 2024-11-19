@@ -68,6 +68,10 @@ div#CybotCookiebotDialogFooter div#CybotCookiebotDialogBodyButtons div#CybotCook
 	background-color:#0FD03B;
 }
 
+#CybotCookiebotDialog input:checked+.CybotCookiebotDialogBodyLevelButtonSlider {
+    background-color:#0FD03B!important;
+}
+
 div#CybotCookiebotDialogFooter div#CybotCookiebotDialogBodyButtons div#CybotCookiebotDialogBodyButtonsWrapper .CybotCookiebotDialogBodyButton:hover {
     box-shadow: 0 0 0 #252525;
     transform: translateY(0);
