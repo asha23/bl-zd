@@ -6,7 +6,7 @@
 :root {
     --global-green: #0FD03B;
     --bright-40: #767676;
-    --black: #252525;
+    --black: #121212;
     --cbot-base-font-size: 16px;
     --cbot-desktop-width: 1440px;
     --cbot-post-width: 1144px;
@@ -21,16 +21,18 @@
 }
 
 /* General Buttons */
-.cbot-button {
+.cbot-button,
+.cbot-button-green,
+.cbot-button-small {
     font-size: 18px;
     font-family: "Poppins", Helvetica, Arial, sans-serif;
     font-weight: 600;
-    box-shadow: 0 4px 0 var(--black);
-    border: 2px solid var(--black);
+    box-shadow: 0 4px 0 var(--black)!important;
+    border: 2px solid var(--black)!important;
     line-height: 1.2;
     position: relative;
     overflow: hidden;
-    border-radius: 130px;
+    border-radius: 130px!important;
     color: var(--black);
     text-align: center;
     text-decoration: none !important;
