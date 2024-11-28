@@ -162,7 +162,9 @@
 							>The BrightLocal Podcast</a></li>
 						<li><strong>Customers</strong></li>
 						<li><a href="https://tools.brightlocal.com/">Login</a></li>
-						<li><a href="https://brightlocal.zendesk.com/access/logout">Sign Out</a></li>
+						{{#if signed_in}}
+							<li><a href="https://brightlocal.zendesk.com/access/logout">Sign Out</a></li>
+						{{/if}}
 						<li><a href="https://help.brightlocal.com/hc/en-us">Help Center</a></li>
 						<li><a href="https://status.brightlocal.com/">Service Status</a></li>
 					</ul>
