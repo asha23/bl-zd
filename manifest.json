@@ -1,7 +1,7 @@
 {
   "name": "BrightLocal - CookieBot Theme",
   "author": "Ash Whiting",
-  "version": "3.5.9",
+  "version": "3.6.0",
   "api_version": 1,
   "default_locale": "en-us",
   "settings": [
@@ -365,7 +365,7 @@
           "type": "text",
           "description": "Enter the Category ID",
           "label": "Category ID",
-          "value": ""
+          "value": "22552599897490"
         },
         {
           "identifier": "cat_23",
