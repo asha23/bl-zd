@@ -2905,7 +2905,7 @@ a.button.article-vote[aria-selected="false"] {
 
 .feature-request .action .button {
 	margin: 0;
-	color: #121212;
+	color: #121212!important;
 	background: #0FD03B !important;
 }
 
