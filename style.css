@@ -2514,6 +2514,10 @@ hr {
 	max-width: 100%;
 }
 
+.related-articles ul li a {
+	color:#121212;
+}
+
 @media (min-width: 1024px) {
 	.related-articles ul {
 		max-width: 58%;
