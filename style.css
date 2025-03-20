@@ -1356,7 +1356,7 @@ main {
 	background-image: url($homepage_background_image);
 	background-position: center;
 	background-size: cover;
-	height: 440px;
+	min-height: 250px;
 	padding: 0 20px;
 	text-align: center;
 	width: 100%;
@@ -1656,7 +1656,7 @@ main {
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
-	margin: 0 0 30px;
+	margin: 0 0 1rem;
 	max-width: 100%;
 	text-align: center;
 	border-radius: 1rem;
@@ -1667,6 +1667,9 @@ main {
 	-ms-flex-align: start;
 	align-items: flex-start;
 	padding: 1.5rem;
+
+	border:1px solid transparent;
+	border-radius:1rem;
 }
 
 .blocks-item a {
