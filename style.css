@@ -1630,6 +1630,7 @@ main {
 	justify-content: flex-start;
 	list-style: none;
 	padding: 0;
+	gap:1rem;
 }
 
 @media (min-width: 768px) {
@@ -1641,7 +1642,7 @@ main {
 .blocks-item {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
-	color: $brand_color;
+	color: #121212!important;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -1658,14 +1659,14 @@ main {
 	margin: 0 0 30px;
 	max-width: 100%;
 	text-align: center;
-	border-radius: 5px;
+	border-radius: 1rem;
 	-webkit-transition: all 0.3s ease-in;
 	-o-transition: all 0.3s ease-in;
 	transition: all 0.3s ease-in;
 	-webkit-box-align: start;
 	-ms-flex-align: start;
 	align-items: flex-start;
-	padding: 16px;
+	padding: 1.5rem;
 }
 
 .blocks-item a {
@@ -1700,10 +1701,12 @@ main {
 .blocks-item:focus,
 .blocks-item:active {
 	background: #ffffff;
-	-webkit-box-shadow: 0 0 4px 0 rgba(13, 16, 7, 0.04),
+	/* -webkit-box-shadow: 0 0 4px 0 rgba(13, 16, 7, 0.04),
 		0 7px 15px -2px rgba(13, 16, 7, 0.08);
 	box-shadow: 0 0 4px 0 rgba(13, 16, 7, 0.04),
-		0 7px 15px -2px rgba(13, 16, 7, 0.08);
+		0 7px 15px -2px rgba(13, 16, 7, 0.08); */
+	border:1px solid #121212;
+	border-radius:1rem;
 }
 
 .blocks-item:hover *,
