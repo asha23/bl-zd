@@ -460,6 +460,7 @@ ul {
 	font-family: "Poppins", Helvetica, Arial, sans-serif;
 	background: #0FD03B;
 	color: #121212!important;
+	border:2px solid #121212;
 }
 
 .nav-wrapper a.login {
@@ -613,6 +614,7 @@ input[type="submit"][disabled] {
 	background: #0FD03B;
 	color:#121212;
 	opacity: 1;
+	border:2px solid #121212;
 }
 
 .button.green:hover,
@@ -620,6 +622,7 @@ input[type="submit"][disabled] {
 	background: #0FD03B;
 	color:#121212;
 	opacity: 0.9;
+	border:2px solid #121212;
 }
 
 /***** Tables *****/
