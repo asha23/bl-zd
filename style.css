@@ -1705,10 +1705,8 @@ main {
 	line-height: 24px;
 }
 
-@media (min-width: 768px) {
-	.blocks-item {
-		/*     margin: 0 15px 30px; */
-	}
+.sections_list li a:hover {
+	text-decoration:underline;
 }
 
 .blocks-item:hover,
@@ -1730,7 +1728,7 @@ main {
 }
 
 .blocks-item:hover {
-	text-decoration:underline;
+	text-decoration:none;
 }
 
 .blocks-item-internal {
