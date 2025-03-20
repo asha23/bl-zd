@@ -2860,7 +2860,7 @@ a.button.article-vote[aria-selected="false"] {
 /***** Feature Request banner *****/
 .feature-request {
 	background: #E7FAEB;
-	color: #121212;
+	color: #121212!important;
 	padding: 40px 8px;
 
 
@@ -2871,6 +2871,7 @@ a.button.article-vote[aria-selected="false"] {
 	-webkit-box-direction: normal;
 	-ms-flex-direction: column;
 	flex-direction: column;
+	color: #121212!important;
 }
 
 .feature-request .text {
@@ -2878,6 +2879,7 @@ a.button.article-vote[aria-selected="false"] {
 	-ms-flex: 1 1 100%;
 	flex: 1 1 100%;
 	text-align: center;
+	color: #121212!important;
 }
 .feature-request .text h3 {
 	color: white;
@@ -2885,10 +2887,11 @@ a.button.article-vote[aria-selected="false"] {
 	text-align: center;
 	margin-bottom: 16px;
 	line-height: 40px;
+	color: #121212!important;
 }
 .feature-request .text p {
-	color: white;
 	margin-bottom: 24px;
+	color: #121212!important;
 }
 .feature-request .action {
 	-webkit-box-flex: 1;
@@ -2902,7 +2905,7 @@ a.button.article-vote[aria-selected="false"] {
 
 .feature-request .action .button {
 	margin: 0;
-	color: white;
+	color: #121212;
 	background: #0FD03B !important;
 }
 
