@@ -1227,7 +1227,7 @@ main {
 
 .breadcrumbs {
 	padding: 0 8px;
-	background: rgba(84, 159, 186, 0.1);
+	/* background: rgba(84, 159, 186, 0.1); */
 	border-radius: 4px;
 	color: #547bba;
 }
