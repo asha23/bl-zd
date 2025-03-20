@@ -1639,12 +1639,13 @@ main {
 	list-style: none;
 	padding: 0;
 	gap:2rem;
-	margin-bottom:2rem;
+	margin-bottom: 4rem;
 }
 
 @media (min-width: 768px) {
 	.blocks-list {
 		margin: 0 -15px;
+		margin-bottom: 4rem;
 	}
 }
 
@@ -1726,6 +1727,10 @@ main {
 .blocks-item:focus *,
 .blocks-item:active * {
 	text-decoration: none;
+}
+
+.blocks-item:hover {
+	text-decoration:underline;
 }
 
 .blocks-item-internal {
