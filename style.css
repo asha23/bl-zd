@@ -459,7 +459,7 @@ ul {
 	opacity: 1;
 	font-family: "Poppins", Helvetica, Arial, sans-serif;
 	background: #0FD03B;
-	color: #121212;
+	color: #121212!important;
 }
 
 .nav-wrapper a.login {
@@ -468,7 +468,7 @@ ul {
 	width: auto;
 	font-weight: 600;
 	background: #0FD03B;
-	color: #121212;
+	color: #121212!important;
 }
 
 .nav-wrapper a.login:hover,
@@ -489,7 +489,7 @@ ul {
 	width: auto;
 	font-weight: 600;
 	background: #0FD03B;
-	color: #121212;
+	color: #121212!important;
 	padding: 0;
 }
 
@@ -516,7 +516,7 @@ ul {
 .button:active,
 .button:focus {
 	color: white;
-	background: #020435;
+	background: #121212;
 }
 
 .button:hover,
@@ -557,7 +557,7 @@ input[type="submit"],
 	margin-right: 5px;
 	opacity: 1;
 	font-family: "Poppins", Helvetica, Arial, sans-serif;
-	background: #03064f;
+	background: #121212;
 }
 
 @media (min-width: 768px) {
@@ -576,7 +576,7 @@ input[type="submit"]:active,
 input[type="submit"]:focus,
 .feature-request .action a.button:hover {
 	color: white;
-	background: #020435;
+	background: #121212;
 }
 
 .button-large:hover,
@@ -606,17 +606,19 @@ input[type="submit"][disabled] {
 .nav-wrapper a.login :focus,
 .nav-wrapper a.login :active {
 	background: transparent;
-	color: #020435;
+	color: #121212;
 }
 
 .button.green {
 	background: #0FD03B;
+	color:#121212;
 	opacity: 1;
 }
 
 .button.green:hover,
 .button.green:focus {
 	background: #0FD03B;
+	color:#121212;
 	opacity: 0.9;
 }
 
