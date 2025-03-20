@@ -6052,12 +6052,15 @@ html[lang|="zh"] .search-results-description em {
 #page-footer .footer-social .footer-social-icons-list li i {
 	-webkit-box-sizing: content-box;
 	box-sizing: content-box;
+	color:#121212;
 }
 #page-footer .footer-social .footer-social-icons-list li i:before {
 	display: none;
+	color:#121212;
 }
 .dropdown-menu-end.dropdown-menu-caret::before {
 	display: none;
+	color:#121212;
 }
 .dropdown-menu-end.dropdown-menu-caret::after {
 	right: 24px;
