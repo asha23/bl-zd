@@ -1684,7 +1684,7 @@ main {
 	align-items: flex-start;
 	padding: 1.5rem;
 
-	border:1px solid #121212;
+	border:1px solid #6FE389;
 	border-radius:1rem;
 	cursor:pointer;
 }
@@ -2012,7 +2012,7 @@ main {
 		0 7px 15px -2px rgba(13, 16, 7, 0.08);
 	box-shadow: 0 0 4px 0 rgba(13, 16, 7, 0.04),
 		0 7px 15px -2px rgba(13, 16, 7, 0.08); */
-	border:1px solid #121212;
+	border:1px solid #6FE389;
 	border-radius: 1rem;
 }
 
