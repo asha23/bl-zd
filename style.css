@@ -227,7 +227,7 @@ body {
 
 a {
 	/* color: $link_color; */
-	color:#097D23;
+	color:#097D23!important;
 	text-decoration: none;
 	-webkit-transition: all 0.3s ease-in;
 	-o-transition: all 0.3s ease-in;
@@ -253,7 +253,7 @@ h6 {
 	font-family: "Poppins", Helvetica, Arial, sans-serif;
 	font-weight: 600;
 	margin-top: 0;
-	color: #121212;
+	color: #121212!important;
 }
 
 h1 {
@@ -273,7 +273,7 @@ h4 {
 	line-height: 32px;
 }
 h3 a {
-	color: #121212;
+	color: #121212!important;
 }
 
 
