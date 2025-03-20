@@ -241,7 +241,7 @@ a:focus {
 }
 
 a:hover {
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 h1,
@@ -1706,7 +1706,7 @@ main {
 }
 
 .sections_list li a:hover {
-	text-decoration:underline;
+	text-decoration:none;
 }
 
 .blocks-item:hover,
@@ -3562,7 +3562,7 @@ a.button.article-vote[aria-selected="false"] {
 .striped-list-title:hover,
 .striped-list-title:focus,
 .striped-list-title:active {
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 .striped-list-title:visited {
