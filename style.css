@@ -5781,13 +5781,13 @@ a.button.article-vote[aria-selected="false"] {
 
 .search-results-list > li {
 	padding:1rem;
-	background-color: white;
+	/* background-color: white; */
 	/* -webkit-box-shadow: 0 0 4px 0 rgba(13, 16, 7, 0.04),
 		0 7px 15px -2px rgba(13, 16, 7, 0.08);
 	box-shadow: 0 0 4px 0 rgba(13, 16, 7, 0.04),
 		0 7px 15px -2px rgba(13, 16, 7, 0.08); */
 	border-radius:0.5rem;
-	margin: 40px 0;
+	margin: 1rem 0;
 }
 
 .search-results-list > li:first-child {
@@ -5796,9 +5796,10 @@ a.button.article-vote[aria-selected="false"] {
 
 .search-results-list > li h2 {
 	font-size: 26px;
-	color: #547bba;
+	color: #121212;
 	line-height: 32px;
 	margin-bottom: 8px;
+	font-weight:600;
 }
 
 .search-results .meta-group {
