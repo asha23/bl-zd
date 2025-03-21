@@ -280,6 +280,12 @@ h3 a {
 	font-weight: 600;
 }
 
+.wysiwyg-font-size-large {
+	font-size: 2rem;
+    padding-top: 1rem;
+    display: block;
+}
+
 
 input,
 textarea {
@@ -6303,3 +6309,5 @@ a.notification-dismiss {
 	-ms-transform: translateY(0px);
 	transform: translateY(0px);
 }
+
+
