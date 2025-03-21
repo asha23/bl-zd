@@ -2327,7 +2327,7 @@ main {
 }
 .article-inner {
 	max-width: 758px;
-	margin: 0 auto;
+	/* margin: 0 auto; */
 }
 @media (min-width: 1100px) {
 	.article {
