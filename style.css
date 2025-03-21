@@ -260,12 +260,13 @@ h6 {
 }
 
 h1 {
-	font-size: 56px;
-	line-height: 72px;
+	font-size: 3rem;
+	line-height: 1.1px;
 	margin-bottom: 24px;
 }
+
 h2 {
-	font-size: 22px;
+	font-size: 1.5rem;
 }
 
 h3,
@@ -281,7 +282,7 @@ h3 a {
 }
 
 .wysiwyg-font-size-large {
-	font-size: 2rem;
+	font-size: 3rem;
     padding-top: 1rem;
     display: block;
 }
