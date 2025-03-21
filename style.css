@@ -2349,7 +2349,7 @@ main {
 .article-header .cat-icon,
 .page-header .left .cat-icon {
 	margin-left: 0;
-	margin: 8px auto 12px auto;
+	margin: 8px auto 2px auto;
 	width: 48px;
 	height: 48px;
 	background-size: 100%;
