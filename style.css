@@ -282,9 +282,11 @@ h3 a {
 }
 
 .wysiwyg-font-size-large {
-	font-size: 3rem;
+	font-size: 2rem;
     padding-top: 1rem;
+    line-height: 1.2;
     display: block;
+    font-weight: 500;
 }
 
 
