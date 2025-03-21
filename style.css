@@ -1245,8 +1245,8 @@ main {
 
 .container .breadcrumb_nav,
 .category-container .container.skinny .breadcrumb_nav {
-	max-width: 640px;
-	margin: 0 auto;
+	/* max-width: 640px; */
+	/* margin: 0 auto; */
 }
 .category-container .container .breadcrumb_nav {
 	max-width: 1316px;
