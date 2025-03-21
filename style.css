@@ -1288,7 +1288,7 @@ main {
 @media (min-width: 768px) {
 	.breadcrumbs li,
 	.breadcrumbs li a {
-		font-size: 14px;
+		font-size: 18px;
 	}
 	.breadcrumbs li + li::before {
 		margin: 0 4px;
