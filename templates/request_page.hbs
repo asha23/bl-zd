@@ -12,7 +12,12 @@
 </div>
 
 <div class="container">
-  <div class="request-breadcrumbs">{{breadcrumbs}}</div>
+  <div class="request-breadcrumbs">
+    
+    {{!-- {{breadcrumbs}} --}}
+    {{> custom_breadcrumbs}}
+    
+    </div>
 
   <h1 class="request-title">{{request.subject}}</h1>
 
