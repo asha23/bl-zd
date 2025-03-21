@@ -22,19 +22,21 @@
 </div -->
 <header class="header" id="header">
 	<div class="logo" id="logo">
-		{{#link "help_center"}}
+		{{!-- {{#link "help_center"}} --}}
+		<a href="https://help.brightlocal.com//hc/en-us" role="menuitem">	
 			<img
 				src="{{settings.logo}}"
 				alt="{{t 'home_page' name=help_center.name}}"
 			/>
-		{{/link}}
-		<nav class="dropper" role="menu" id="drops">
+		</a>
+		{{!-- {{/link}} --}}
+		{{!-- <nav class="dropper" role="menu" id="drops">
 			<a href="https://www.brightlocal.com" role="menuitem">BrightLocal Home</a>
 			<a
 				href="https://help.brightlocal.com//hc/en-us"
 				role="menuitem"
 			>BrightLocal Help Center Home</a>
-		</nav>
+		</nav> --}}
 	</div>
 
 	<!-- do a conditional here -->
@@ -58,7 +60,11 @@
 
 		<nav class="user-nav" id="user-nav">
 			<a
-				href="https://www.brightlocal.com/free-online-demo/"
+				href="https://www.brightlocal.com"
+				target="_blank"
+			>BrightLocal</a> 
+			<a
+				href="https://www.brightlocal.com/book-a-demo/"
 				target="_blank"
 			>Book a Demo</a>
 			<a
