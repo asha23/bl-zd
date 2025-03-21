@@ -4858,9 +4858,10 @@ a.button.article-vote[aria-selected="false"] {
 .pagination a,
 .pagination span {
 	font-size: 18px;
-	color: $brand_color;
 	padding: 8px;
 	line-height: 24px;
+	display: block;
+    margin-top: 4px;
 }
 
 @media (min-width: 768px) {
@@ -4868,6 +4869,8 @@ a.button.article-vote[aria-selected="false"] {
 	.pagination span {
 		font-size: 18px;
 		padding: 8;
+		display: block;
+    	margin-top: 4px;
 	}
 }
 
