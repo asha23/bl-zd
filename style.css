@@ -5791,7 +5791,7 @@ a.button.article-vote[aria-selected="false"] {
 }
 
 .search-results-list > li:first-child {
-	border-top: 1px solid #6FE389;
+	/* border-top: 1px solid #6FE389; */
 }
 
 .search-results-list > li h2 {
@@ -5855,10 +5855,10 @@ a.button.article-vote[aria-selected="false"] {
 
 .search-results-description {
 	word-break: break-word;
-	font-size: 20px;
-	color: #0e151c;
+	font-size: 1rem;
+	color: #121212;
 	letter-spacing: 0;
-	line-height: 32px;
+	line-height: 1.3;
 	margin-bottom: 24px;
 }
 
