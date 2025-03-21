@@ -1250,6 +1250,8 @@ main {
 	color: #547bba;
 }
 
+
+
 @media (min-width: 768px) {
 	.breadcrumbs {
 		margin: 0;
@@ -1276,9 +1278,9 @@ main {
 }
 
 .breadcrumbs li + li::before {
-	content: "/";
-	margin: 0 2px;
-	color: $link_color;
+	content: ">";
+	/* margin: 0 2px; */
+	color: #121212;
 }
 
 .breadcrumbs li a:visited {
