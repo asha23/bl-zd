@@ -1381,7 +1381,7 @@ main {
 
 @media (max-width: 768px) {
 	.hero {
-		/* height: auto; */
+		height: 260px;
 	}
 }
 
