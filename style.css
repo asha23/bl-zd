@@ -5805,6 +5805,14 @@ a.button.article-vote[aria-selected="false"] {
 	font-weight:600;
 }
 
+.search-results-list > li h2 a {
+	font-size: 26px;
+	color: #121212;
+	line-height: 32px;
+	margin-bottom: 8px;
+	font-weight:600;
+}
+
 .search-results .meta-group {
 	display: block;
 	-webkit-box-align: center;
