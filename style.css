@@ -6088,6 +6088,10 @@ html[lang|="zh"] .search-results-description em {
 	top: -10px;
 }
 
+.dropdown {
+	position: relative;
+}
+
 .dropdown-menu {
 	background: #fff;
 	border: 1px solid #fff;
@@ -6097,8 +6101,20 @@ html[lang|="zh"] .search-results-description em {
 	display: none;
 	font-size: 16px;
 	line-height: 24px;
-	padding: 0;
+	padding: 0.3rem;
+	position: absolute;
+	top: 100%;
+	right: 0;
+	z-index: 100;
+	min-width: 200px;
+	margin-top: 8px;
 }
+
+.dropdown-toggle[aria-expanded="true"] + .dropdown-menu,
+.dropdown-toggle[aria-expanded="true"] ~ .dropdown-menu {
+	display: block;
+}
+
 .dropdown-menu [role="menuitem"] {
 	-webkit-transition: all 0.3s ease-in;
 	-o-transition: all 0.3s ease-in;
@@ -6106,6 +6122,9 @@ html[lang|="zh"] .search-results-description em {
 	font-size: 16px;
 	line-height: 24px;
 	color: #547bba;
+	display: block;
+	padding: 8px 12px;
+	border-radius: 0.25rem;
 }
 .dropdown-menu [role="menuitem"]:hover {
 	background: #547bba20;

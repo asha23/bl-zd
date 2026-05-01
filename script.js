@@ -260,6 +260,38 @@ document.addEventListener('DOMContentLoaded', function () {
     burgerMenu.style.display = 'none';
   }
 
+  // Generic dropdown-toggle (user-info, comment-sorter, section-subscribe, profile sorter, etc.)
+  var dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+
+  function closeAllDropdowns() {
+    Array.prototype.forEach.call(dropdownToggles, function (t) {
+      t.setAttribute('aria-expanded', 'false');
+    });
+  }
+
+  Array.prototype.forEach.call(dropdownToggles, function (toggle) {
+    if (!toggle.hasAttribute('aria-expanded')) {
+      toggle.setAttribute('aria-expanded', 'false');
+    }
+
+    toggle.addEventListener('click', function (e) {
+      e.stopPropagation();
+      var wasOpen = toggle.getAttribute('aria-expanded') === 'true';
+      closeAllDropdowns();
+      toggle.setAttribute('aria-expanded', wasOpen ? 'false' : 'true');
+    });
+  });
+
+  document.addEventListener('click', function (e) {
+    if (e.target && !closest(e.target, '.dropdown-toggle, .dropdown-menu')) {
+      closeAllDropdowns();
+    }
+  });
+
+  document.addEventListener('keyup', function (e) {
+    if (e.keyCode === 27) closeAllDropdowns();
+  });
+
   // Toggles expanded aria to collapsible elements
   var collapsible = document.querySelectorAll('.collapsible-nav, .collapsible-sidebar');
 
