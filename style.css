@@ -2949,7 +2949,7 @@ a.button.article-vote[aria-selected="false"] {
 	-ms-flex-item-align: center;
 	-ms-grid-row-align: center;
 	align-self: center;
-	text-align: right;
+	text-align: center;
 }
 
 .feature-request .action .button {
@@ -2990,7 +2990,7 @@ a.button.article-vote[aria-selected="false"] {
 		-webkit-box-flex: 1;
 		-ms-flex: 1 1 30%;
 		flex: 1 1 30%;
-		text-align:center;
+		text-align:right;
 	}
 }
 
