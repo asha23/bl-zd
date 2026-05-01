@@ -2936,6 +2936,7 @@ a.button.article-vote[aria-selected="false"] {
 	margin-bottom: 16px;
 	line-height: 40px;
 	color: #121212!important;
+	font-family:"Poppins", Arial, Helvetica, sans-serif;
 }
 .feature-request .text p {
 	margin-bottom: 24px;
@@ -6447,6 +6448,7 @@ a.notification-dismiss {
 	text-transform: uppercase;
 	color: #6FE389 !important;
 	margin: 0;
+	text-align:left;
 }
 
 .site-footer-col-list {
